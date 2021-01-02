@@ -5,7 +5,7 @@ Architecture: iphoneos-arm
 Description: Butterflies for your wallpaper
   Makes your background less boring by adding butterflies.
 	.
-	If you don't like the built-in butterflies, you can add your own by copying your own butterfly bundles into "/Library/ButterflyEffect/Butterflies".
+	If you don't like the built-in butterflies, you can add your own by copying your own butterfly bundles into "/Library/ButterflyEffect/Butterflies". Butterflies can be enabled and disabled with the Settings app.
 	.
 	Requires iOS 6.0 or later.
 Maintainer: pixelomer
