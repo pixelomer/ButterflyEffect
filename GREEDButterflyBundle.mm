@@ -30,7 +30,7 @@
 				*errorPt = makeError(7, @"Info.plist key \"%@\" is missing.", key); \
 				return nil; \
 			} \
-			if (defaultValue && ![value isKindOfClass:[_class class]]) { \
+			if (![value isKindOfClass:[_class class]]) { \
 				*errorPt = makeError(6, @"Info.plist value for key \"%@\" is invalid. Expected %s, got %@ instead.", key, #_class, value ? NSStringFromClass([value class]) : nil); \
 				return nil; \
 			} \
@@ -57,7 +57,7 @@
 		// Get duration
 		{
 			NSNumber *duration;
-			getInfo(duration, @"GREEDDuration", nil, NSString);
+			getInfo(duration, @"GREEDDuration", nil, NSNumber);
 			_duration = [duration doubleValue];
 		}
 		
