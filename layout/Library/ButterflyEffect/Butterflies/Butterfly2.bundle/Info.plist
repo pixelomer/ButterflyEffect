@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>Default Butterfly 2</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.pixelomer.greed.butterfly2</string>
+	<key>GREEDDuration</key>
+	<real>0.32</real>
+	<key>GREEDVersion</key>
+	<integer>1</integer>
+	<key>GREEDCenter</key>
+	<string>{0.510,0.558}</string>
+</dict>
+</plist>

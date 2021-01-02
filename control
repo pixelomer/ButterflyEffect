@@ -1,0 +1,14 @@
+Package: com.pixelomer.greed
+Name: ButterflyEffect
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Butterflies for your wallpaper
+  Makes your background less boring by adding butterflies.
+	.
+	If you don't like the built-in butterflies, you can add your own by copying your own butterfly bundles into "/Library/ButterflyEffect/Butterflies".
+	.
+	Requires iOS 6.0 or later.
+Maintainer: pixelomer
+Author: pixelomer
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>=6.0)

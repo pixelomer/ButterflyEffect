@@ -1,0 +1,27 @@
+#!/bin/sh
+
+function finish() {
+	f="${1}"
+
+	# No control fd: bail out
+	[ -z "${f}${CYDIA}" ] && return
+	cydia=(${CYDIA})
+
+	# Cydia control fd version != 1: bail out
+	[ ${cydia[1]} -eq 1 ] || return
+
+	echo "finish:${f}" >&${cydia[0]}
+}
+
+case "$1" in
+
+	triggered)
+		echo "Butterflies were changed, requesting a respring..."
+		finish reload
+		;;
+
+	configure)
+		# Nothing needs to be done here
+		;;
+
+esac
