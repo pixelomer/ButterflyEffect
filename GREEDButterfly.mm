@@ -17,7 +17,6 @@ static void GREEDButterfliesChanged(
 	CFDictionaryRef userInfo
 ) {
 	[NSUserDefaults.standardUserDefaults synchronize];
-	[_enabledButterfliesLock lock];
 	NSMutableArray *enabledButterflies = [NSMutableArray new];
 	for (GREEDButterflyBundle *bundle in _allButterflies) {
 		NSString *key = [NSString
@@ -32,6 +31,7 @@ static void GREEDButterfliesChanged(
 			[enabledButterflies addObject:bundle];
 		}
 	}
+	[_enabledButterfliesLock lock];
 	_enabledButterflies = [enabledButterflies copy];
 	[_enabledButterfliesLock unlock];
 }
